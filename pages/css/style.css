@@ -1,0 +1,23 @@
+ul .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu li {
+  float: left;
+  display: inline;
+}
+
+ul.menu li a {
+  display: inline-block;
+  color: #5757a0;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: lavender;
+  border-bottom: 5px solid #5757a0;
+}

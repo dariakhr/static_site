@@ -4,75 +4,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style_registration.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_registration.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
-  <h1>Реєстрація</h1>
-  <nav>
-    <ul class="menu">
-      <li><a href="articles.html">Статті</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="contacts.html">Контакти</a></li>
-      <li><a href="gallery.html">Галерея</a></li>
-      <li><a href="page_nav.html">Навігація</a></li>
-      <li><a href="../index.html">Головна</a></li>
-    </ul>
-  </nav>
-  <form>
-    <div class="container">
-      <h2>Заповніть форму нижче, щоб створити акаунт</h2>
+  <header>
+    <h1>Реєстрація</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="../index.html">Головна</a></li>
+        <li><a href="articles.html">Статті</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="page_nav.html">Навігація</a></li>
+        <li><a href="registration.html">Регiстрація</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>Заповніть форму нижче, щоб створити акаунт</h2>
+    <hr>
+    <form class="form" action="https://tests.fomenko.top/echo/index.php" method="get">
+      <label><b>Ім'я</b></label>
+      <input type="text" placeholder="введіть ім'я" name="name" required>
       <hr>
-      <form class="form" action="https://tests.fomenko.top/echo/index.php" method="get">
-        <label><b>Ім'я</b></label>
-        <input type="name" placeholder="введіть ім'я" name="name" required>
-        <hr>
-        <label><b>Фамілія</b></label>
-        <input type="surname" placeholder="Фамілія" name="surname" required>
-        <hr>
-        <label><b>Пароль</b></label>
-        <input type="password" placeholder="Введіть пароль" name="psw" id="psw" required>
-        <hr>
-        <labe><b>Пароль ще раз</b></labe>
-        <input type="password" placeholder="Введіть пароль ще раз" name="psw-repeat" id="psw-repeat" required>
-        <hr>
-        <label><b>Email</b></label>
-        <input type="text" placeholder="Введіть Email" name="email" required>
-        <hr>
-        <p>Cтать:</p>
-        <input type="radio" id="html" name="gender" value="female">
-        <label>Жіноча</label><br>
-        <input type="radio" id="css" name="gender" value="male">
-        <label>Чоловіча</label><br>
-        <hr>
-        <label for="birthday">Оберіть дату народження:</label>
-        <input type="date" id="birthday" name="birthday">
-        <hr>
-        <p>Ваша улюблена іжа:</p>
-        <input type="checkbox" id="food1" name="food1" value="Bike">
-        <label for="food1">Українська</label><br>
-        <input type="checkbox" id="vehicle2" name="food2" value="Car">
-        <label for="food2">Німецька</label><br>
-        <input type="checkbox" id="vehicle3" name="food3" value="Boat">
-        <label for="food3">В'єтнамська</label><br><br>
-        <hr>
-        <label for="myfile">Оберіть фото:</label>
-        <input type="file" id="myfile" name="myfile"><br><br>
-        <hr>
-        <label for="homepage">Посилання на вашу сторінку:</label>
-        <input type="url" placeholder="https://mysite.name" id="homepage" name="homepage">
-        <hr>
-        <label>Декілька слів про себе:</label>
-        <textarea rows="4" cols="50">bla bla</textarea>
-        <input type="reset" value="Reset">
-        <button type="submit" class="registerbtn">Register</button>
-      </form>
-    </div>
-  </form>
+      <label><b>Фамілія</b></label>
+      <input type="text" placeholder="Фамілія" name="surname" required>
+      <hr>
+      <label><b>Пароль</b></label>
+      <input type="password" placeholder="Введіть пароль" name="psw" id="psw" required>
+      <hr>
+      <label><b>Пароль ще раз</b></label>
+      <input type="password" placeholder="Введіть пароль ще раз" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Введіть Email" name="email" required>
+      <hr>
+      <p>Cтать:</p>
+      <input type="radio" id="html" name="gender" value="female">
+      <label>Жіноча</label><br>
+      <input type="radio" id="css" name="gender" value="male">
+      <label>Чоловіча</label><br>
+      <hr>
+      <label for="birthday">Оберіть дату народження:</label>
+      <input type="date" id="birthday" name="birthday">
+      <hr>
+      <p>Ваша улюблена іжа:</p>
+      <input type="checkbox" id="food1" name="food1" value="Bike">
+      <label for="food1">Українська</label><br>
+      <input type="checkbox" id="food2" name="food2" value="Car">
+      <label for="food2">Німецька</label><br>
+      <input type="checkbox" id="food3" name="food3" value="Boat">
+      <label for="food3">В'єтнамська</label><br><br>
+      <hr>
+      <label for="myfile">Оберіть фото:</label>
+      <input type="file" id="myfile" name="myfile"><br><br>
+      <hr>
+      <label for="homepage">Посилання на вашу сторінку:</label>
+      <input type="url" placeholder="https://mysite.name" id="homepage" name="homepage">
+      <hr>
+      <label>Декілька слів про себе:</label>
+      <textarea rows="4" cols="50">bla bla</textarea>
+      <input type="reset" value="Reset">
+      <button type="submit" class="registerbtn">Register</button>
+    </form>
+  </div>
   <footer>
-    <div>&#169;</div>
+    <div><span>&#169; Daria Kharchenko</span></div>
   </footer>
 </body>
 

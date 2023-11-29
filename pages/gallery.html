@@ -4,56 +4,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link href="css/style.css" rel="stylesheet">
-  <link href="css/style_gallery.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_gallery.css" rel="stylesheet">
   <title>Gallery</title>
 </head>
 
 <body>
   <header>
+    <h1>Галерея</h1>
     <nav>
-      <h1>Галерея</h1>
       <ul class="menu">
+        <li><a href="../index.html">Головна</a></li>
         <li><a href="articles.html">Статті</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
         <li><a href="page_nav.html">Навігація</a></li>
         <li><a href="registration.html">Регiстрація</a></li>
-        <li><a href="../index.html">Головна</a></li>
       </ul>
     </nav>
   </header>
-  <div class="slider middle">
+  <div>
+    <div>
+      <h4><a>Перший слайд</a></h4>
+      <a href="assets/halloween_dog.png" target="_blank" title="Натисніть, щоб передивитись в повному розмірі">
+        <span>halloween_dog.png</span>
+        <img src="assets/halloween_dog.png" alt="img png" width="200" height="200">
+      </a>
+    </div>
+    <div>
+      <h4><a>Другий слайд</a></h4>
+      <a href="assets/pumpkin_book.jpg" target="_blank" title="Натисніть, щоб передивитись в повному розмірі">
+        <span>pumpkin_book.jpg</span>
+        <img src="assets/pumpkin_book.jpg" alt="img jpg" width="200" height="200">
+      </a>
+    </div>
+    <div>
+      <h4><a>Третій слайд</a></h4>
+      <a href="assets/ghost.jpg" target="_blank" title="Натисніть, щоб передивитись в повному розмірі">
+        <span>ghost.jpg</span>
+        <img src="assets/ghost.jpg" alt="img jpg" width="200" height="200">
+      </a>
+    </div>
+    <div>
+      <h4><a>Четвертий слайд</a></h4>
+      <a href="assets/witch.jpg" target="_blank" title="Натисніть, щоб передивитись в повному розмірі">
+        <span>witch.jpg</span>
+        <img src="assets/witch.jpg" alt="img jpg" width="200" height="200">
+      </a>
+    </div>
+  </div>
+  <div class="slide_show mid">
     <div class="slides">
-      <input type="radio" name="r" id="r1" checked>
-      <input type="radio" name="r" id="r2">
-      <input type="radio" name="r" id="r3">
-      <input type="radio" name="r" id="r4">
-
-      <div class="slide s1">
-        <img src="assets/halloween_dog.png" alt="image1_png" class="img">
+      <input type="radio" name="btn" id="btn1" checked>
+      <input type="radio" name="btn" id="btn2">
+      <input type="radio" name="btn" id="btn3">
+      <input type="radio" name="btn" id="btn4">
+      <div class="slide slide1">
+        <img src="assets/halloween_dog.png" alt="image1_png">
       </div>
-      <div class="slide">
-        <img src="assets/pumpkin_book.jpg" alt="image2_jpg" class="img">
+      <div class="slide slide2">
+        <img src="assets/pumpkin_book.jpg" alt="image2_jpg">
       </div>
-      <div class="slide">
-        <img src="assets/ghost.jpg" alt="image3_jpg" class="img">
+      <div class="slide slide3">
+        <img src="assets/ghost.jpg" alt="image3_jpg">
       </div>
-      <div class="slide">
-        <img src="assets/witch.jpg" alt="image4_jpg" class="img">
+      <div class="slide slide4">
+        <img src="assets/witch.jpg" alt="image4_jpg">
       </div>
     </div>
     <div class="navigation">
-      <label for="r1" class="bar"></label>
-      <label for="r2" class="bar"></label>
-      <label for="r3" class="bar"></label>
-      <label for="r4" class="bar"></label>
+      <label for="btn1" class="nav" style="--t:#686de0"></label>
+      <label for="btn2" class="nav" style="--t:#22a6b3"></label>
+      <label for="btn3" class="nav" style="--t:#badc58"></label>
+      <label for="btn4" class="nav" style="--t:#ff7979"></label>
     </div>
   </div>
   <footer>
-    <div><span>&#169;</span></div>
+    <div><span>&#169; Daria Kharchenko</span></div>
   </footer>
-
 </body>
 
 </html>
